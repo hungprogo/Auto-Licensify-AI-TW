@@ -1,0 +1,17 @@
+{
+    "name": "台灣車輛行照 AI 智慧辨識助手 Auto Licensify AI (TW)",
+    "short_name": "行照辨識 AI",
+    "description": "高對比、清爽易讀、100% 免填 Key、無痕隱私的台灣車輛行照 Gemini AI 高精度辨識工具。",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#C05C46",
+    "icons": [
+        {
+            "src": "assets/logo.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

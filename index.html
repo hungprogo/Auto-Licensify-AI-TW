@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="zh-TW" data-theme="terracotta">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+
+    <!-- 🔍 Google Search Console (GSC) 網站擁有權驗證標記 -->
+    <meta name="google-site-verification" content="FKVb3v8kHoQelYCihUm4LqXb3Aqux3SwqbzMAOqKDdk" />
+
+    <!-- 🏷️ SEO 核心標題與標準網址 -->
+    <title>台灣車輛行照 AI 智慧辨識助手 Auto Licensify AI (TW) - 免填 Key 雲端與離線辨識</title>
+    <link rel="canonical" href="https://hungprogo.github.io/Auto-Licensify-AI-TW/" />
+
+    <!-- 📝 SEO 核心檢索描述與關鍵字 -->
+    <meta name="description"
+        content="台灣車輛行照 AI 智慧辨識助手 (Auto Licensify AI TW)：100% 免填 API Key 開箱即用、無痕隱私純記憶體運算的車籍辨識工具。支援多圖批次、PDF拆解、48點網格畫質檢測、跨裝置取件碼傳輸與 Excel 報表照片嵌入匯出。">
+    <meta name="keywords"
+        content="行照辨識, 台灣車輛行照, 車籍資料, OCR, AI 辨識, Gemini 3.6 Flash, 智慧辨識, 行照 OCR, 跨裝置傳輸, 監理法規, 車牌辨識, Excel 匯出, Ollama, 隱私安全, 無痕運算">
+    <meta name="author" content="hungprogo">
+    <meta name="copyright" content="hungprogo">
+    <meta name="application-name" content="Auto Licensify AI (TW)">
+
+    <!-- 🤖 搜尋引擎爬蟲指引 (Robots & Crawlers) -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <!-- 📱 行動裝置與 PWA 支援 -->
+    <meta name="theme-color" content="#C05C46">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="行照辨識 AI">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="assets/logo.png">
+
+    <!-- 🌐 Open Graph / Facebook 社群分享標籤 -->
+    <meta property="og:locale" content="zh_TW">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="台灣車輛行照 AI 智慧辨識助手 Auto Licensify AI (TW)">
+    <meta property="og:description" content="無痕隱私的台灣車輛行照 Gemini AI 高精度辨識工具。支援多圖批次、跨裝置配對與 Excel 報表照片嵌入匯出。">
+    <meta property="og:url" content="https://hungprogo.github.io/Auto-Licensify-AI-TW/">
+    <meta property="og:site_name" content="Auto Licensify AI (TW)">
+    <meta property="og:image" content="https://hungprogo.github.io/Auto-Licensify-AI-TW/assets/logo.png">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+    <meta property="og:image:alt" content="Auto Licensify AI (TW) 台灣車輛行照 AI 智慧辨識助手 品牌圖標">
+
+    <!-- 🐦 Twitter Card 社群分享標籤 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="台灣車輛行照 AI 智慧辨識助手 Auto Licensify AI (TW)">
+    <meta name="twitter:description" content="無痕隱私的台灣車輛行照 Gemini AI 高精度辨識工具。支援多圖批次、跨裝置配對與 Excel 報表照片嵌入匯出。">
+    <meta name="twitter:image" content="https://hungprogo.github.io/Auto-Licensify-AI-TW/assets/logo.png">
+    <meta name="twitter:image:alt" content="Auto Licensify AI (TW) 台灣車輛行照 AI 智慧辨識助手">
+
+    <!-- 📊 結構化資料 (Schema.org JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "台灣車輛行照 AI 智慧辨識助手 Auto Licensify AI (TW)",
+      "alternateName": "Auto Licensify AI TW",
+      "url": "https://hungprogo.github.io/Auto-Licensify-AI-TW/",
+      "image": "https://hungprogo.github.io/Auto-Licensify-AI-TW/assets/logo.png",
+      "description": "100% 免填 API Key 開箱即用、無痕隱私純記憶體運算的台灣車輛行照 AI 高精度辨識工具。支援多圖批次、PDF拆解、48點網格畫質檢測、跨裝置取件碼傳輸與 Excel 報表照片嵌入匯出。",
+      "applicationCategory": "UtilitiesApplication, BusinessApplication",
+      "operatingSystem": "Web Browser (Chrome, Safari, Firefox, Edge), Windows, macOS, Linux, iOS, Android",
+      "browserRequirements": "Requires modern HTML5 Web Browser with JavaScript and WebRTC support",
+      "inLanguage": "zh-TW",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "TWD",
+        "availability": "https://schema.org/InStock"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "hungprogo",
+        "url": "https://github.com/hungprogo"
+      },
+      "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "featureList": [
+        "100% 免填 API Key 雲端代理辨識",
+        "純前端記憶體解析，伺服器零留存與無痕隱私",
+        "5秒交錯管線排程 (Staggered Pipeline)",
+        "前端 48 點網格畫質智慧檢測與防呆防護",
+        "跨裝置雙軌即時傳輸 (WebRTC 直連與 6 位取件碼離線提取)",
+        "多工作表 Excel 結構化匯出與 4:3 彩色實體照片嵌入",
+        "台灣 22 項監理法規標準化車籍欄位萃取",
+        "支援本機 Ollama / LM Studio 離線私有化視覺推論"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "使用「台灣車輛行照 AI 智慧辨識助手」需要申請或填寫 API Key 嗎？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不需要。系統預設提供 Cloudflare Worker 免費代理通道，開箱即用無需填寫任何 Key；同時也支援使用者填入自訂 Gemini API Key 或切換為本機 Ollama / LM Studio 離線私有化模型。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "上傳辨識的行照影像與車籍資料是否會被伺服器儲存？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不會。本系統採用純前端記憶體運算與零後端資料庫架構，所有影像解析皆於瀏覽器記憶體內完成，關閉分頁即刻銷毀釋放，絕不留存任何機敏個資。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "跨裝置傳輸功能如何運作？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "支援 WebRTC P2P 毫秒級相機掃碼直傳，以及 6 位配對取件碼閱後即焚機制。接收端提取成功後，雲端中繼節點會自動物理銷毀暫存數據。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "支援哪些匯出格式？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "支援匯出完整 Excel 試算表（包含 24 欄位車籍總表與每車獨立嵌入 4:3 彩色實體行照照片之工作表）、JSON 結構化資料、CSV 以及剪貼簿一鍵複製。"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Roboto+Mono:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome 圖示庫 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- PDF.js CDN (前端 PDF 渲染) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+    <!-- SheetJS (Excel 讀取解析) -->
+    <script src="https://cdn.jsdelivr.net/npm/xlsx-js-style@1.2.0/dist/xlsx.bundle.js"></script>
+
+    <!-- ExcelJS CDN (支援圖文並茂 Excel 匯出與影像嵌入) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.4.0/exceljs.min.js"></script>
+
+    <!-- QRCode.js (跨裝置即時配對與取件碼 QR 渲染) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <!-- html5-qrcode (純前端相機即時 QR Code 掃描器，不跳頁直傳) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.3.8/html5-qrcode.min.js"></script>
+
+    <!-- PeerJS CDN (WebRTC P2P 端對端毫秒級瀏覽器直連) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/peerjs/1.5.4/peerjs.min.js"></script>
+
+    <!-- 專屬品牌 Favicon (純圖標) -->
+    <link rel="icon" type="image/png" href="assets/logo.png">
+
+    <link rel="stylesheet" href="css/style.css?v=1.5.0">
+</head>
+
+<body>
+
+    <!-- 1. 應用程式頂部品牌與工具列 -->
+    <header class="app-header">
+        <div class="brand-row">
+            <a href="https://hungprogo.github.io/Auto-Licensify-AI-TW/" class="brand-logo"
+                title="Auto Licensify AI (TW) 台灣車輛行照 AI 智慧辨識助手">
+                <img src="assets/logo.png" alt="Auto Licensify Logo 台灣車輛行照 AI 智慧辨識助手 品牌圖標" class="brand-logo-icon">
+                <h1 class="visually-hidden">台灣車輛行照 AI 智慧辨識助手 Auto Licensify AI (TW)</h1>
+                <img src="assets/product_name.png" alt="Auto Licensify AI (TW) 台灣車輛行照 AI 智慧辨識助手"
+                    class="brand-product-title">
+            </a>
+
+            <div class="app-header-actions">
+                <!-- 📥 接收跨裝置資料 -->
+                <button type="button" class="header-square-btn" id="syncReceiveBtn" onclick="openReceiveModal()"
+                    title="輸入 6 位取件碼或出示 QR Code 接收手機端回傳的車籍" aria-label="接收跨裝置資料">
+                    <i class="fa-solid fa-cloud-arrow-down text-primary square-btn-icon"></i>
+                    <span class="square-btn-text">接收資料</span>
+                </button>
+
+                <!-- 📘 操作指引 (Hover 浮現 / 觸控點擊可關閉) -->
+                <div class="popover-container" id="guidePopoverContainer">
+                    <button type="button" class="header-square-btn" id="guideBtn" onclick="toggleGuidePopover(event)"
+                        title="點擊或滑過檢視操作指引與隱私額度說明" aria-label="操作指引">
+                        <i class="fa-solid fa-book-open text-primary square-btn-icon"></i>
+                        <span class="square-btn-text">操作指引</span>
+                    </button>
+                    <!-- 浮現卡片 (手機端自動轉化為 Bottom Sheet) -->
+                    <div class="popover-card popover-card-guide" id="guidePopoverCard">
+                        <div class="popover-card-header">
+                            <div class="popover-card-title">
+                                <i class="fa-solid fa-book-open text-primary me-2"></i>
+                                <span>系統操作指引與使用限制說明 (v1.5)</span>
+                            </div>
+                            <button type="button" class="btn-close-popover" onclick="closeGuidePopover(event)"
+                                title="關閉卡片">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                        <div class="popover-card-body">
+                            <!-- ⚠️ 預設免費通道額度與速率限制提醒 (置頂強調) -->
+                            <div
+                                style="background: rgba(245, 158, 11, 0.1); border-left: 3.5px solid var(--state-warning); padding: 8px 10px; border-radius: var(--radius-xs); margin-bottom: 10px; font-size: 12.5px; color: var(--text-body); line-height: 1.55;">
+                                <b style="color: #b45309;"><i
+                                        class="fa-solid fa-triangle-exclamation me-1"></i>平台預設通道限制說明：</b><br>
+                                本系統預設串接 Google Gemini 官方免費層級，<span class="guide-badge-warning">每日與每分鐘用量有限
+                                    (RPM)</span>，適合日常單筆或小批次作業，<span class="guide-badge-danger">不適合超大量高頻作業</span>。批次辨識時內建
+                                5 秒交錯管線排程以防超限。
+                            </div>
+
+                            <ul
+                                style="margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 8px; font-size: 13px;">
+                                <li><b>開箱即用</b>：<span class="guide-badge-primary">免填 Key 開箱即用</span>，支援 1~10 張多圖批次拖入、PDF
+                                    智慧拆解與 <code>Ctrl+V</code> 貼上。內建 4:3 裁切與 90 度旋轉校準。</li>
+                                <li><b>額度用畢因應建議</b>：若遇辨識延遲或頻率限制提示，建議稍候再試；亦可於【⚙️ 進階設定】填入個人申請之免費 Gemini API Key（<span
+                                        class="guide-badge-success">享專屬獨立配額，全程 TLS 1.3 銀行級加密且伺服器零留存</span>），或切換至本機
+                                    <b>Ollama
+                                        (llama3.2-vision:11b)</b> 離線視覺模型。</li>
+                                <li><b>多工作表 Excel 嵌入照片</b>：支援匯出「車籍彙總總表 + 每車嵌入 4:3 彩色實體行照照片之專屬頁籤」，亦支援直接將 Excel
+                                    報表拖入工作區快速解析還原。</li>
+                                <li><b>跨裝置雙軌傳輸</b>：
+                                    <div
+                                        style="margin-top: 4px; padding-left: 6px; font-size: 12.5px; color: var(--text-body); line-height: 1.6;">
+                                        • 📶 <b>QR 掃碼即時直傳</b>：發送端開啟相機掃描 QR Code 即時傳輸；系統具備環境自適應機制，於一般網路採 P2P
+                                        直傳，於機關受保護網路時自動由雲端加密通道安全接管。<br>
+                                        • 🔑 <b>6 位取件碼（非同步離線）</b>：發送端生成 6 位取件碼，接收端 24 小時內隨時輸入提取，取件完成後雲端暫存自動物理銷毀。
+                                    </div>
+                                </li>
+                                <li><b>端對端無痕隱私保護</b>：
+                                    <div
+                                        style="margin-top: 4px; padding-left: 6px; font-size: 12.5px; color: var(--text-label); line-height: 1.6;">
+                                        • <b>純前端記憶體解析</b>：影像 <span
+                                            class="guide-highlight">僅於本地記憶體運算</span>，關閉分頁即刻銷毀。<br>
+                                        • <b>零資料庫承諾</b>：<span class="guide-badge-success">不設任何後端資料庫</span>，不留存任何車籍與機敏個資。
+                                    </div>
+                                </li>
+                            </ul>
+                            <div
+                                style="margin-top: 12px; padding-top: 8px; border-top: 1px dashed var(--border-strong); text-align: center; font-size: 12.5px;">
+                                <a href="https://github.com/hungprogo/Auto-Licensify-AI-TW" target="_blank"
+                                    rel="noopener noreferrer"
+                                    style="color: var(--brand-primary); font-weight: 800; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
+                                    <i class="fa-brands fa-github" style="font-size: 15px;"></i>
+                                    <span>前往 GitHub 查看完整說明手冊與提供回饋意見</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 11px;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 🛠️ 日誌版權 (Hover 浮現 / 點擊切換) -->
+                <div class="popover-container" id="logPopoverContainer">
+                    <button type="button" class="header-square-btn" id="logBtn" onclick="toggleLogPopover(event)"
+                        title="點擊檢視系統日誌、展示統計與版權宣告" aria-label="日誌版權">
+                        <i class="fa-solid fa-shield-halved text-primary square-btn-icon"></i>
+                        <span class="square-btn-text">日誌版權</span>
+                    </button>
+                    <!-- 浮現卡片 (手機端自動轉化為 Bottom Sheet) -->
+                    <div class="popover-card popover-card-log" id="logPopoverCard">
+                        <div class="popover-card-header">
+                            <div class="popover-card-title">
+                                <i class="fa-solid fa-terminal text-primary me-2"></i>
+                                <span>系統日誌與專案宣告</span>
+                            </div>
+                            <div style="display: flex; gap: 6px; align-items: center;">
+                                <button type="button" class="btn-action btn-secondary" onclick="clearDebugLog(event)"
+                                    style="padding: 2px 8px; font-size: 11px; height: 26px;" title="清空日誌">
+                                    <i class="fa-solid fa-trash-can me-1"></i>清空
+                                </button>
+                                <button type="button" class="btn-action btn-secondary" onclick="copyDebugLog(event)"
+                                    style="padding: 2px 8px; font-size: 11px; height: 26px;" title="複製日誌">
+                                    <i class="fa-solid fa-copy me-1"></i>複製
+                                </button>
+                                <button type="button" class="btn-close-popover" onclick="closeLogPopover(event)"
+                                    title="關閉卡片">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- 1. 終端機即時日誌 (置頂) -->
+                        <div class="popover-card-body log-popover-body" id="debugLogBody"
+                            style="font-family: var(--font-mono); font-size: 11.5px; background: #0f172a; color: #e2e8f0; border-radius: var(--radius-xs); padding: 10px; max-height: 200px; overflow-y: auto; display: flex; flex-direction: column; gap: 4px; margin-bottom: 8px;">
+                            <div class="debug-log-item info">⚡ 系統就緒，準備接收行照影像...</div>
+                        </div>
+
+                        <!-- 2. Visits / Processed (第二排，無背景色塊，極簡純淨) -->
+                        <div class="log-stats-line">
+                            <span>Visits: <strong id="statLiveViews">0</strong></span>
+                            <span class="stats-divider">·</span>
+                            <span>Processed: <strong id="statLiveProcessed">0</strong></span>
+                        </div>
+
+                        <!-- 3. 版權與開源資訊 (hungprogo 加 hyperlink) -->
+                        <div class="log-copyright-footer">
+                            <div>Copyright © 2026 <a href="https://github.com/hungprogo" target="_blank"
+                                    rel="noopener noreferrer"
+                                    style="color: var(--brand-primary); font-weight: 700; text-decoration: underline;">hungprogo</a>.
+                                All Rights Reserved.</div>
+                            <div style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">
+                                台灣車輛行照 AI 智慧辨識助手 · 純前端與 Cloudflare 邊緣運算開源架構
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 🍂 多主題切換按鈕 (預設大地紙感) -->
+                <button class="header-square-btn" id="themeBtn" onclick="toggleTheme()" title="切換介面主題風格"
+                    aria-label="切換風格">
+                    <i class="fa-solid fa-leaf square-btn-icon" style="color: #ea580c;" id="themeIcon"></i>
+                    <span class="square-btn-text" id="themeText">大地紙感</span>
+                </button>
+
+                <!-- ⚙️ 通道設定按鈕 -->
+                <button class="header-square-btn" id="settingsBtn" onclick="openSettingsModal()" title="進階 API 與通道設定"
+                    aria-label="系統設定">
+                    <i class="fa-solid fa-gear text-muted square-btn-icon"></i>
+                    <span class="square-btn-text">進階設定</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- 2. 4 階段現代化精緻工作流進度圖 (固定視覺配色) -->
+        <div class="stepper-container">
+            <div class="stepper-line"></div>
+
+            <div class="step-item" id="step1Item">
+                <div class="step-circle">01</div>
+                <div class="step-label">上傳／接收行照</div>
+            </div>
+
+            <div class="step-item" id="step2Item">
+                <div class="step-circle">02</div>
+                <div class="step-label">縮放旋轉對齊</div>
+            </div>
+
+            <div class="step-item" id="step3Item">
+                <div class="step-circle">03</div>
+                <div class="step-label">智慧車籍辨識</div>
+            </div>
+
+            <div class="step-item" id="step4Item">
+                <div class="step-circle">04</div>
+                <div class="step-label">匯出報表／傳輸</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. 手機版專屬吸頂 Tab 分頁切換器 (Sticky Segmented Tabs) -->
+    <div class="mobile-tabs-bar" id="mobileTabsBar">
+        <button type="button" class="mobile-tab-btn active" id="tabBtnQueue" onclick="switchMobileTab('queue')">
+            <i class="fa-solid fa-layer-group me-1"></i>1. 行照佇列 (<span id="mobileQueueCount">0</span>)
+        </button>
+        <button type="button" class="mobile-tab-btn" id="tabBtnResults" onclick="switchMobileTab('results')">
+            <i class="fa-solid fa-clipboard-check me-1"></i>2. 辨識結果 (<span id="mobileResultCount">0</span>)
+        </button>
+    </div>
+
+    <!-- 4. 主工作區 Grid (自適應雙大圓角卡) -->
+    <main class="main-container">
+        <div class="workspace-grid">
+
+            <!-- 左側卡片：影像清單與裁切控制 -->
+            <div class="workspace-card" id="leftWorkspaceCard">
+                <div class="card-header">
+                    <div class="card-title-group">
+                        <div class="card-badge-icon">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                        <span class="card-title">1. 行照影像佇列 (<span id="queueCount">0</span>/10)</span>
+                    </div>
+                </div>
+
+                <!-- 隱藏檔案選取與相機拍攝 Input -->
+                <input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp,application/pdf" multiple
+                    style="display: none;" onchange="handleFileSelected(event)">
+                <input type="file" id="cameraInput" accept="image/*" capture="environment" style="display: none;"
+                    onchange="handleFileSelected(event)">
+
+                <!-- 初始拖曳上傳區 (佇列為空時呈現) -->
+                <div class="dropzone-container" id="dropzone" onclick="triggerFileInput()">
+                    <div class="drop-icon-wrapper">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                    </div>
+                    <div class="drop-title">點擊選取或拖入 1~10 張行照 (或多頁 PDF)</div>
+                    <div class="drop-desc desktop-only-text">支援多圖批次拖入、PDF 智慧多頁拆解與連續 <kbd
+                            style="background:var(--bg-panel); padding:2px 6px; border-radius:4px; border:1px solid var(--border-strong);">Ctrl+V</kbd>
+                        貼上</div>
+                    <div class="drop-desc mobile-only-text" style="display: none;">支援拍照即拍即傳、手機相簿多選與 PDF 智慧拆解</div>
+                    <div class="drop-formats">
+                        <span class="format-tag"><i class="fa-solid fa-car me-1 text-primary"></i>單次上限 10 筆</span>
+                        <span class="format-tag"><i class="fa-solid fa-file-pdf text-danger me-1"></i>PDF 智慧拆解</span>
+                        <span class="format-tag"><i
+                                class="fa-solid fa-shield-halved text-success me-1"></i>無痕記憶體處理</span>
+                    </div>
+                </div>
+
+                <!-- 批次縮圖清單流容器 (佇列有檔案時呈現) -->
+                <div class="queue-container" id="queueListContainer" style="display: none;"></div>
+
+                <!-- 追加拖放區 (佇列未滿 10 筆時在下方呈現) -->
+                <div class="mini-dropzone" id="miniDropzone" style="display: none;">
+                    <div class="mini-drop-btn" onclick="triggerFileInput()">
+                        <i class="fa-solid fa-plus-circle text-primary"></i>
+                        <span>追加照片/PDF (尚可加入 <span id="queueRemainCount">10</span> 筆)</span>
+                    </div>
+                    <div class="mini-camera-btn mobile-only-btn" onclick="triggerCameraInput()">
+                        <i class="fa-solid fa-camera text-primary"></i>
+                        <span>拍照追加</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右側卡片：車籍結構化結果區 -->
+            <div class="workspace-card" id="rightWorkspaceCard">
+                <div class="card-header">
+                    <div class="card-title-group">
+                        <div class="card-badge-icon">
+                            <i class="fa-solid fa-clipboard-check"></i>
+                        </div>
+                        <span class="card-title">2. 辨識結果與校對區</span>
+                    </div>
+                </div>
+
+                <!-- 空白初始提示 (與左側拖曳區完全對稱之置中排版) -->
+                <div class="empty-placeholder" id="emptyPlaceholder">
+                    <div class="drop-icon-wrapper">
+                        <i class="fa-solid fa-car-side"></i>
+                    </div>
+                    <div class="drop-title">等待載入車輛行照</div>
+                    <div class="drop-desc">載入 1~10 張行照後，點擊下方【開始 AI 辨識】即可依序萃取 22 項監理車籍</div>
+                </div>
+
+                <!-- 雙欄對齊卡片流檢視 -->
+                <div class="results-flow-container" id="cardsView" style="display: none;"></div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- 5. 統一全域底部操作列 (支援 Tab 感知與桌面/手機智能切換) -->
+    <div class="bottom-action-bar" id="bottomActionBar">
+        <div class="bottom-action-inner">
+            <!-- 佇列 Tab 專屬操作組 (拍照、相簿選取、開始 AI 辨識) -->
+            <div class="bottom-group-queue" id="bottomGroupQueue">
+                <button type="button" class="btn-bottom-sub" id="bottomBtnCamera" onclick="triggerCameraInput()"
+                    title="拍照辨識或追加">
+                    <i class="fa-solid fa-camera"></i>
+                    <span>拍照</span>
+                </button>
+                <button type="button" class="btn-bottom-sub" id="bottomBtnAlbum" onclick="triggerFileInput()"
+                    title="從相簿或 PDF 選取">
+                    <i class="fa-solid fa-images"></i>
+                    <span>相簿/PDF</span>
+                </button>
+                <button type="button" class="btn-bottom-action btn-bottom-start" id="bottomBtnStart"
+                    onclick="startBatchProcessing()" disabled>
+                    <i class="fa-solid fa-bolt me-1"></i>開始 AI 辨識 (<span id="bottomQueueCount">0</span>)
+                </button>
+            </div>
+
+            <!-- 結果 Tab 專屬操作組 (跨裝置傳輸/分享、匯出 JSON、匯出 Excel) -->
+            <div class="bottom-group-results" id="bottomGroupResults" style="display: none;">
+                <button type="button" class="btn-bottom-action btn-bottom-share" id="bottomBtnShare"
+                    onclick="openSyncModal()" title="跨裝置傳輸與分享">
+                    <i class="fa-solid fa-share-nodes me-1"></i>跨裝置傳輸 / 分享
+                </button>
+                <button type="button" class="btn-bottom-action btn-bottom-json" id="bottomBtnJson"
+                    onclick="exportBatchJson()" title="下載繁體中文結構化 JSON 清單">
+                    <i class="fa-solid fa-file-code me-1"></i>匯出 JSON
+                </button>
+                <button type="button" class="btn-bottom-action btn-bottom-excel" id="bottomBtnExcel"
+                    onclick="exportBatchExcel()" title="匯出 Excel 總表與單車嵌圖頁籤">
+                    <i class="fa-solid fa-file-excel me-1"></i>匯出 Excel
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 6. 📥 接收與匯入車籍資料 Modal (電腦端專用：輸入 6 位取件碼 / 出示配對 QR Code / 匯入 Excel 報表) -->
+    <div class="modal-overlay" id="receiveModal">
+        <div class="modal-card modal-card-sync">
+            <div class="modal-header">
+                <h3 style="font-size: 17px; font-weight: 800; color: var(--text-title);">
+                    <i class="fa-solid fa-cloud-arrow-down text-primary me-2"></i>接收車籍資料與匯入
+                </h3>
+                <button class="btn-action" style="padding: 4px 8px;" onclick="closeReceiveModal()"><i
+                        class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+
+                <!-- 接收模式 Tabs (3 欄均分) -->
+                <div class="sync-mode-tabs">
+                    <button type="button" class="sync-tab-btn active" id="receiveTabPickup"
+                        onclick="switchReceiveMode('pickup')">
+                        <i class="fa-solid fa-key"></i>
+                        <span>6 位取件碼</span>
+                    </button>
+                    <button type="button" class="sync-tab-btn" id="receiveTabQr" onclick="switchReceiveMode('qr')">
+                        <i class="fa-solid fa-qrcode"></i>
+                        <span>隔空連線 (QR)</span>
+                    </button>
+                    <button type="button" class="sync-tab-btn" id="receiveTabExcel"
+                        onclick="switchReceiveMode('excel')">
+                        <i class="fa-solid fa-file-excel text-success"></i>
+                        <span>匯入 Excel</span>
+                    </button>
+                </div>
+
+                <!-- 接收模式 1：輸入 6 位取件碼 -->
+                <div class="sync-mode-content" id="receiveContentPickup">
+                    <div class="sync-desc-box">
+                        <div class="sync-desc-title"><i class="fa-solid fa-key text-success me-1"></i>6 位取件碼提取</div>
+                        <div class="sync-desc-text">可開啟相機對準傳送端 QR Code 立即自動下載，或手動輸入 6 位代碼解密載入車籍清冊。</div>
+                    </div>
+
+                    <!-- 📷 方案 A：開啟相機掃碼秒載 (直覺獨立大入口) -->
+                    <div class="pickup-scan-prompt-card">
+                        <button type="button" class="btn-start-pickup-scan" id="btnStartPickupQrScan"
+                            onclick="startPickupQrScanner()">
+                            <i class="fa-solid fa-camera me-2"></i>開啟相機掃碼提取
+                        </button>
+                        <div class="pickup-scan-hint">
+                            <i class="fa-solid fa-bolt text-warning me-1"></i>鏡頭對準傳送端 QR Code，識別成功後將自動秒速下載還原！
+                        </div>
+
+                        <!-- 📷 相機鏡頭即時掃描容器 -->
+                        <div id="pickupQrScannerBox" class="pickup-scanner-viewport" style="display: none;">
+                            <div id="pickupQrReader" style="width: 100%; border-radius: 8px; overflow: hidden;"></div>
+                            <button type="button" class="btn-cancel-scan mt-2" onclick="stopPickupQrScanner()">
+                                <i class="fa-solid fa-xmark me-1"></i>關閉鏡頭
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="pickup-divider-text">
+                        <span>— 或手動輸入 6 位代碼 —</span>
+                    </div>
+
+                    <!-- ⌨️ 方案 B：手動輸入 / USB 條碼槍輸入 -->
+                    <div class="pickup-receiver-box">
+                        <div style="display: flex; gap: 8px;">
+                            <input type="text" id="inputPickupCode" class="form-input pickup-input"
+                                placeholder="例如: 8K992A" maxlength="8"
+                                style="text-transform: uppercase; font-family: var(--font-mono); font-size: 18px; font-weight: 800; text-align: center; letter-spacing: 2px;">
+                            <button type="button" class="btn-sync-primary" style="white-space: nowrap; padding: 0 20px;"
+                                onclick="fetchResultsByPickupCode()">
+                                <i class="fa-solid fa-download me-1"></i>提取載入
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 接收模式 2：出示配對 QR Code 供發送端掃描 -->
+                <div class="sync-mode-content" id="receiveContentQr" style="display: none;">
+                    <div class="sync-desc-box">
+                        <div class="sync-desc-title"><i class="fa-solid fa-qrcode text-primary me-1"></i>出示 QR Code
+                            供發送端掃描</div>
+                        <div class="sync-desc-text">由發送端開啟相機掃描下方 QR Code，車籍資料將即時加密傳送至本端工作區。</div>
+                    </div>
+
+                    <div class="qr-pairing-box">
+                        <!-- QR Code 條碼區 (等待掃碼) -->
+                        <div id="pairingQrContainer" class="qr-canvas-wrapper"></div>
+
+                        <!-- 🔑 接收端專屬配對代碼卡片 (防折行自適應) -->
+                        <div id="pairSessionBadgeWrapper"
+                            style="margin: 10px auto 6px; padding: 8px 12px; background: var(--bg-highlight); border: 1.5px dashed var(--brand-primary); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; gap: 6px; width: 100%; max-width: 320px; box-sizing: border-box;">
+                            <span
+                                style="font-size: 12px; font-weight: 700; color: var(--text-label); white-space: nowrap; flex-shrink: 0;">配對代碼：</span>
+                            <span id="displayPairSessionCode"
+                                style="font-family: var(--font-mono); font-size: 14.5px; font-weight: 800; color: var(--brand-primary); letter-spacing: 1px; word-break: break-all; text-align: center;">------</span>
+                        </div>
+
+                        <!-- 📥 正在接收資料中動態畫面 (掃碼後瞬間切換旋轉循環箭頭/沙漏動畫) -->
+                        <div id="pairingConnectedState" style="display: none; padding: 28px 12px; text-align: center;">
+                            <div id="connectedIconWrapper"
+                                style="font-size: 54px; color: var(--brand-primary); margin-bottom: 14px;">
+                                <i class="fa-solid fa-arrows-rotate fa-spin" id="connectedIcon"
+                                    style="--fa-animation-duration: 1.2s;"></i>
+                            </div>
+                            <div id="connectedTitle"
+                                style="font-size: 18px; font-weight: 800; color: var(--brand-primary); margin-bottom: 8px;">
+                                📥 正在接收車籍資料中...
+                            </div>
+                            <div id="connectedDesc"
+                                style="font-size: 13.5px; color: var(--text-body); font-weight: 600; line-height: 1.6; max-width: 320px; margin: 0 auto;">
+                                已偵測到發送端！正在接收加密封包與實體照片，即將呈現...
+                            </div>
+                        </div>
+
+                        <!-- 🛡️ 受保護網路環境提示卡片 (GSN / 嚴格防火牆時自動浮現) -->
+                        <div id="protectedNetworkNotice"
+                            style="display: none; margin: 10px auto 6px; padding: 8px 12px; background: rgba(245, 158, 11, 0.08); border-left: 3px solid #f59e0b; border-radius: var(--radius-sm); font-size: 12.5px; color: var(--text-body); line-height: 1.5; text-align: left; width: 100%; max-width: 320px; box-sizing: border-box;">
+                            <i class="fa-solid fa-shield-halved text-warning me-1"></i>
+                            <strong>提示：</strong>本端處於受保護網路，傳輸需時可能在15~60秒；亦可改用 <a href="javascript:void(0)"
+                                onclick="switchReceiveMode('pickup')"
+                                style="color: var(--brand-primary); font-weight: 700; text-decoration: underline;">【6
+                                位取件碼】</a> 提取。
+                        </div>
+
+                        <div class="qr-status-indicator" id="qrStatusIndicator">
+                            <span class="qr-pulse-dot" id="qrPulseDot"></span>
+                            <span id="qrStatusText">等待發送端掃描配對中...</span>
+                        </div>
+                        <div id="qrSubNote"
+                            style="font-size: 12.5px; color: var(--text-label); text-align: center; margin-top: 8px;">
+                            發送端開啟相機掃描 QR Code，或在發送端輸入上方代碼即可回傳。
+                        </div>
+                        <button type="button" class="btn-action" id="btnRefreshQr" style="margin-top: 10px;"
+                            onclick="refreshPairingQrCode()">
+                            <i class="fa-solid fa-rotate me-1"></i>重新整理 QR Code
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 接收模式 3：📂 本地 Excel 報表匯入與工作區還原 -->
+                <div class="sync-mode-content" id="receiveContentExcel" style="display: none;">
+                    <div class="sync-desc-box">
+                        <div class="sync-desc-title"><i class="fa-solid fa-file-excel text-success me-1"></i>載入 Excel
+                            車籍報表 (.xlsx)</div>
+                        <div class="sync-desc-text">支援直接拖入或選取本系統產出的 Excel 報表，自動解析並還原車籍至工作區。</div>
+                    </div>
+
+                    <div style="background: var(--bg-card); border: 2px dashed var(--border-strong); border-radius: var(--radius-md); padding: 24px 16px; text-align: center; cursor: pointer; transition: all 0.2s ease;"
+                        onclick="document.getElementById('inputImportExcelFile').click()"
+                        ondragover="event.preventDefault(); this.style.borderColor='var(--brand-primary)';"
+                        ondragleave="this.style.borderColor='var(--border-strong)';" ondrop="handleExcelDrop(event)">
+                        <input type="file" id="inputImportExcelFile" accept=".xlsx, .xls" style="display: none;"
+                            onchange="handleExcelFileInput(event)">
+                        <div style="font-size: 42px; color: #107c41; margin-bottom: 10px;">
+                            <i class="fa-solid fa-file-excel"></i>
+                        </div>
+                        <div style="font-size: 15px; font-weight: 800; color: var(--text-title); margin-bottom: 6px;">
+                            點擊選取或拖放 Excel 報表檔案至此
+                        </div>
+                        <div style="font-size: 12.5px; color: var(--text-label); line-height: 1.5;">
+                            支援標準 .xlsx 格式（自動識別【車籍總表】或單車規格頁籤）
+                        </div>
+                        <button type="button" class="btn-sync-primary"
+                            style="margin: 14px auto 0; padding: 8px 24px; font-size: 13.5px;"
+                            onclick="event.stopPropagation(); document.getElementById('inputImportExcelFile').click();">
+                            <i class="fa-solid fa-folder-open me-2"></i>瀏覽檔案
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-header"
+                style="justify-content: flex-end; border-top: 1px solid var(--border-subtle); border-bottom: none;">
+                <button class="btn-action" onclick="closeReceiveModal()">完成 / 關閉</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 7. 📤 傳送車籍資料至接收端 Modal -->
+    <div class="modal-overlay" id="shareModal">
+        <div class="modal-card modal-card-sync">
+            <div class="modal-header">
+                <h3 style="font-size: 17px; font-weight: 800; color: var(--text-title);">
+                    <i class="fa-solid fa-paper-plane text-primary me-2"></i>傳送車籍資料至接收端
+                </h3>
+                <button class="btn-action" style="padding: 4px 8px;" onclick="closeShareModal()"><i
+                        class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+
+                <!-- 分享模式 Tabs (2 欄均分) -->
+                <div class="sync-mode-tabs sync-mode-tabs-2">
+                    <button type="button" class="sync-tab-btn active" id="shareTabPickup"
+                        onclick="switchShareMode('pickup')">
+                        <i class="fa-solid fa-key"></i>
+                        <span>產生 6 位取件碼</span>
+                    </button>
+                    <button type="button" class="sync-tab-btn" id="shareTabQr" onclick="switchShareMode('qr')">
+                        <i class="fa-solid fa-qrcode"></i>
+                        <span>隔空連線 (QR Code)</span>
+                    </button>
+                </div>
+
+                <!-- 分享模式 1：產生 6 位數加密取件碼 -->
+                <div class="sync-mode-content" id="shareContentPickup">
+                    <div class="sync-desc-box">
+                        <div class="sync-desc-title"><i class="fa-solid fa-key text-success me-1"></i>產生 6 位取件碼</div>
+                        <div class="sync-desc-text">產生一組 6 位取件代碼，由接收端輸入代碼即可解密載入車籍清冊。支援純字串 QR 條碼免輸入掃描與閱後即焚。</div>
+                    </div>
+
+                    <div class="pickup-generator-box">
+                        <div style="font-size: 13.5px; font-weight: 700; color: var(--text-title); margin-bottom: 8px;">
+                            📤 點擊下方按鈕產生取件碼：
+                        </div>
+                        <button type="button" class="btn-sync-primary" id="btnGenPickupCode"
+                            onclick="generatePickupCode()">
+                            <i class="fa-solid fa-cloud-arrow-up me-2"></i>加密並產生 6 位取件碼
+                        </button>
+                        <div class="pickup-result-card" id="pickupResultCard" style="display: none;">
+                            <div class="pickup-code-label">專屬取件代碼（24 小時有效・支援閱後即焚）：</div>
+                            <div class="pickup-code-display" id="displayPickupCode">------</div>
+
+                            <!-- 📱 純字串 QR Code 畫布 (不帶 URL，消除外部洩漏風險) -->
+                            <div id="pickupQrCanvas" class="pickup-qr-canvas-box"></div>
+
+                            <div
+                                style="font-size: 12.5px; color: var(--brand-primary); font-weight: 700; margin: 8px 0 12px;">
+                                👉 請至接收端【6 位取件碼】手動輸入，或點擊【📷 相機掃碼】對準此圖秒載！
+                            </div>
+
+                            <div class="pickup-action-row"
+                                style="display: flex; gap: 8px; justify-content: center; margin-top: 10px;">
+                                <button type="button" class="btn-pickup-copy" onclick="copyCurrentPickupCode()">
+                                    <i class="fa-regular fa-copy me-1"></i>複製代碼
+                                </button>
+                                <button type="button" class="btn-pickup-revoke" onclick="revokeCurrentPickupCode()">
+                                    <i class="fa-solid fa-trash-can me-1"></i>立即註銷
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 分享模式 2：掃描接收端 QR Code 即時傳送 -->
+                <div class="sync-mode-content" id="shareContentQr" style="display: none;">
+                    <div class="sync-desc-box">
+                        <div class="sync-desc-title"><i class="fa-solid fa-qrcode text-primary me-1"></i>掃描接收端 QR Code
+                            即時傳送</div>
+                        <div class="sync-desc-text">請對準接收端螢幕出示的 QR Code 進行掃描，或直接輸入接收端配對代碼完成傳送。</div>
+                    </div>
+
+                    <div
+                        style="background: var(--bg-card); border: 1.5px solid var(--border-subtle); border-radius: var(--radius-md); padding: 16px; text-align: center;">
+
+                        <!-- 啟動相機掃描按鈕 -->
+                        <button type="button" class="btn-sync-primary" id="btnStartQrScan"
+                            onclick="startInPageQrScanner()"
+                            style="font-size: 15px; padding: 12px 20px; width: 100%; max-width: 340px; margin: 0 auto 10px;">
+                            <i class="fa-solid fa-camera me-2"></i>開啟相機掃描接收端 QR Code
+                        </button>
+
+                        <!-- 相機即時視訊掃描視窗 (啟動後顯示) -->
+                        <div id="inPageQrScannerBox" style="display: none; margin-top: 10px;">
+                            <div
+                                style="position: relative; max-width: 320px; margin: 0 auto; border-radius: var(--radius-md); overflow: hidden; border: 2px solid var(--brand-primary); background: #000;">
+                                <div id="inPageQrReader" style="width: 100%;"></div>
+                            </div>
+                            <button type="button" class="btn-action btn-secondary" onclick="stopInPageQrScanner()"
+                                style="margin-top: 10px;">
+                                <i class="fa-solid fa-xmark me-1"></i>關閉相機鏡頭
+                            </button>
+                        </div>
+
+                        <div style="border-top: 1px dashed var(--border-subtle); padding-top: 14px; margin-top: 14px;">
+                            <div
+                                style="font-size: 13px; font-weight: 700; color: var(--text-label); margin-bottom: 6px;">
+                                或手動輸入接收端配對代碼：
+                            </div>
+                            <div style="display: flex; gap: 8px; max-width: 340px; margin: 0 auto;">
+                                <input type="text" id="inputTargetPairSession" class="form-input"
+                                    placeholder="例如: PAIR_XXXX"
+                                    style="font-family: var(--font-mono); font-size: 13.5px; text-align: center; text-transform: uppercase;">
+                                <button type="button" class="btn-sync-primary"
+                                    style="white-space: nowrap; padding: 0 16px;"
+                                    onclick="sendCurrentResultsToPairSession()">
+                                    <i class="fa-solid fa-paper-plane me-1"></i>傳送
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-header"
+                style="justify-content: flex-end; border-top: 1px solid var(--border-subtle); border-bottom: none;">
+                <button class="btn-action" onclick="closeShareModal()">完成 / 關閉</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 設定 Modal -->
+    <div class="modal-overlay" id="settingsModal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3 style="font-size: 17px; font-weight: 800; color: var(--text-title);"><i
+                        class="fa-solid fa-sliders text-primary me-2"></i>進階設定與 API 通道</h3>
+                <button class="btn-action" style="padding: 4px 8px;" onclick="closeSettingsModal()"><i
+                        class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+
+                <!-- 1. AI 提供商模式選擇器 -->
+                <div class="form-group">
+                    <label class="form-label">
+                        <span><i class="fa-solid fa-brain text-primary me-1"></i>AI 推論引擎與服務商選擇</span>
+                        <span class="format-tag" style="font-size: 11px;">支援雲端 / 本地私有化</span>
+                    </label>
+                    <div class="provider-radio-group"
+                        style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px;">
+                        <label class="provider-radio-card active" id="providerCardDefault"
+                            onclick="selectProvider('default')">
+                            <input type="radio" name="providerType" value="default" checked style="display: none;">
+                            <div class="provider-radio-icon text-success"><i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <div class="provider-radio-title">系統預設通道</div>
+                            <div class="provider-radio-desc">免填 Key・開箱即用</div>
+                        </label>
+                        <label class="provider-radio-card" id="providerCardGemini" onclick="selectProvider('gemini')">
+                            <input type="radio" name="providerType" value="gemini" style="display: none;">
+                            <div class="provider-radio-icon text-primary"><i class="fa-brands fa-google"></i></div>
+                            <div class="provider-radio-title">Gemini 直連</div>
+                            <div class="provider-radio-desc">個人 API Key 直連</div>
+                        </label>
+                        <label class="provider-radio-card" id="providerCardOpenAi" onclick="selectProvider('openai')">
+                            <input type="radio" name="providerType" value="openai" style="display: none;">
+                            <div class="provider-radio-icon" style="color: #10a37f;"><i
+                                    class="fa-solid fa-microchip"></i></div>
+                            <div class="provider-radio-title">OpenAI 相容</div>
+                            <div class="provider-radio-desc">Ollama/LM Studio/自建</div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- 模式 A：系統預設通道設定 -->
+                <div id="sectionProviderDefault" class="provider-section-box">
+                    <div
+                        style="background: var(--bg-highlight); border: 1px solid var(--border-active); border-radius: var(--radius-md); padding: 14px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 13.5px; font-weight: 700; color: var(--brand-primary);">
+                                <i class="fa-solid fa-shield-halved me-1"></i>系統安全代理通道 (Gemini 3.6 Flash)
+                            </span>
+                            <span class="format-tag"
+                                style="background: var(--brand-primary-light); color: var(--brand-primary); border-color: var(--brand-primary); font-size: 11px;">
+                                <i class="fa-solid fa-bolt me-1"></i>安全中繼通道
+                            </span>
+                        </div>
+                        <div
+                            style="font-size: 12.5px; color: var(--text-label); font-weight: 500; margin-top: 6px; line-height: 1.45;">
+                            🌐 透過官方 Cloudflare 安全通道進行中繼，訪客免輸入金鑰即可辨識台灣行照。
+                        </div>
+
+                        <div style="margin-top: 10px;">
+                            <button type="button" class="btn-action" style="font-size: 11.5px; padding: 3px 8px;"
+                                onclick="toggleCustomWorkerUrl()">
+                                <i class="fa-solid fa-pen-to-square me-1"></i>自訂 Worker 代理端點 (選填)
+                            </button>
+                        </div>
+
+                        <div id="customWorkerContainer" style="display: none; margin-top: 10px;">
+                            <div style="display: flex; gap: 8px; align-items: center;">
+                                <input type="text" id="workerUrlInput" class="form-input"
+                                    placeholder="留空時自動使用系統內建安全代理通道"
+                                    style="font-family: var(--font-mono); font-size: 13px;">
+                                <button type="button" class="btn-action" onclick="clearWorkerUrl()"
+                                    style="white-space: nowrap;" title="清空自訂端點以恢復系統預設">
+                                    <i class="fa-solid fa-eraser me-1"></i>清空
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 模式 B：Google Gemini 直連模式設定 -->
+                <div id="sectionProviderGemini" class="provider-section-box" style="display: none;">
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <label class="form-label">
+                            <span>個人 Google Gemini API Key</span>
+                            <a href="https://aistudio.google.com/app/apikey" target="_blank"
+                                style="color: var(--brand-primary); font-size: 12px; text-decoration: underline; font-weight: 700;">
+                                <i class="fa-solid fa-arrow-up-right-from-square me-1"></i>免費申請 Gemini Key
+                            </a>
+                        </label>
+                        <div style="display: flex; gap: 8px;">
+                            <input type="password" id="customApiKeyInput" class="form-input"
+                                placeholder="請貼入 Google AI Studio API Key (AIzaSy...)">
+                            <button type="button" class="btn-action" onclick="clearApiKey()"
+                                style="white-space: nowrap;" title="清空金鑰">
+                                <i class="fa-solid fa-eraser me-1"></i>清空
+                            </button>
+                        </div>
+                        <div style="font-size: 12px; color: var(--text-label); margin-top: 5px;">
+                            💡 前端將直接向 Google 官方伺服器發送請求，金鑰僅儲存在您的本機瀏覽器中。
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 模式 C：自訂 OpenAI 相容服務設定 (本地 Ollama / LM Studio / 自建) -->
+                <div id="sectionProviderOpenAi" class="provider-section-box" style="display: none;">
+                    <div
+                        style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 14px;">
+
+                        <!-- 快捷預設模板 -->
+                        <div style="margin-bottom: 12px;">
+                            <div
+                                style="font-size: 12px; font-weight: 700; color: var(--text-title); margin-bottom: 6px;">
+                                🚀 一鍵填入快捷模板：
+                            </div>
+                            <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                                <button type="button" class="btn-preset-chip" onclick="applyOpenAiPreset('openai')">
+                                    <i class="fa-solid fa-cube me-1"></i>OpenAI 官方 (gpt-4o-mini)
+                                </button>
+                                <button type="button" class="btn-preset-chip" onclick="applyOpenAiPreset('ollama')">
+                                    <i class="fa-solid fa-laptop-code me-1"></i>本地 Ollama (llama3.2-vision)
+                                </button>
+                                <button type="button" class="btn-preset-chip" onclick="applyOpenAiPreset('openrouter')">
+                                    <i class="fa-solid fa-globe me-1"></i>OpenRouter
+                                </button>
+                                <button type="button" class="btn-preset-chip" onclick="applyOpenAiPreset('lmstudio')">
+                                    <i class="fa-solid fa-server me-1"></i>本地 LM Studio
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Base URL -->
+                        <div class="form-group" style="margin-bottom: 10px;">
+                            <label class="form-label" style="font-size: 12.5px;">
+                                <span>API 端點網址 (Base URL)</span>
+                                <span class="format-tag" style="font-size: 10.5px;">需支援 /v1/chat/completions</span>
+                            </label>
+                            <input type="text" id="openaiBaseUrlInput" class="form-input"
+                                placeholder="例如: http://localhost:11434/v1 或 https://api.openai.com/v1"
+                                style="font-family: var(--font-mono); font-size: 12.5px;">
+                        </div>
+
+                        <!-- API Key -->
+                        <div class="form-group" style="margin-bottom: 10px;">
+                            <label class="form-label" style="font-size: 12.5px;">
+                                <span>API 金鑰 (API Key)</span>
+                                <span style="font-size: 11px; color: var(--text-label);">本地 Ollama 可留空或隨意填寫</span>
+                            </label>
+                            <input type="password" id="openaiApiKeyInput" class="form-input" placeholder="sk-..."
+                                style="font-family: var(--font-mono); font-size: 12.5px;">
+                        </div>
+
+                        <!-- Model Name -->
+                        <div class="form-group" style="margin-bottom: 10px;">
+                            <label class="form-label" style="font-size: 12.5px;">
+                                <span>模型名稱 (Model Name)</span>
+                                <span class="format-tag" style="font-size: 10.5px;">必須支援多模態 Vision</span>
+                            </label>
+                            <input type="text" id="openaiModelInput" class="form-input"
+                                placeholder="例如: gpt-4o-mini, llama3.2-vision:11b, llava"
+                                style="font-family: var(--font-mono); font-size: 12.5px;">
+                        </div>
+
+                        <!-- 自訂 System Prompt -->
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label class="form-label" style="font-size: 12.5px;">
+                                <span>自訂 System Prompt (系統提示詞)</span>
+                                <span style="font-size: 11px; color: var(--text-label);">自建模型請自行撰寫提示詞與 JSON 輸出結構</span>
+                            </label>
+                            <textarea id="openaiCustomPromptInput" class="form-input" rows="4"
+                                placeholder="請在此填入適用於您自建模型的 System Prompt 提示詞與指定輸出欄位結構..."
+                                style="font-family: var(--font-mono); font-size: 12px; resize: vertical; line-height: 1.45;"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-header"
+                style="justify-content: flex-end; gap: 10px; border-top: 1px solid var(--border-subtle); border-bottom: none;">
+                <button class="btn-action btn-secondary" onclick="closeSettingsModal()">關閉</button>
+                <button class="btn-action btn-primary" onclick="saveSettings()"><i
+                        class="fa-solid fa-check me-1"></i>儲存設定</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ⚡ 批次 AI 辨識中全域最上層跳顯覆蓋層 (全螢幕毛玻璃 + 即時跑秒 + 中止排程按鈕) -->
+    <div class="modal-overlay" id="statusCard"
+        style="z-index: 99998; display: none; align-items: center; justify-content: center; backdrop-filter: blur(8px); background: rgba(15, 23, 42, 0.72);">
+        <div class="processing-modal-card">
+            <div class="processing-icon-wrapper">
+                <i class="fa-solid fa-bolt-lightning fa-bounce text-warning" style="font-size: 42px;"></i>
+            </div>
+            <div class="processing-modal-title">
+                <span>⚡ 台灣行照 AI 深度解析中</span>
+            </div>
+            <div class="status-text" id="statusText">
+                佇列排程準備中...
+            </div>
+            <div class="processing-timer-badge">
+                <i class="fa-regular fa-clock me-1"></i><span id="statusTimer">0.0s</span>
+            </div>
+            <div class="processing-progress-track">
+                <div class="processing-progress-bar"></div>
+            </div>
+            <div style="margin-top: 18px;">
+                <button type="button" class="btn-cancel-batch" id="btnCancelBatch" onclick="cancelBatchProcessing()"
+                    title="中止當前批次處理">
+                    <i class="fa-solid fa-stop me-1"></i>取消辨識排程
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 8. 🌐 全域跨裝置傳輸與接收中動態覆蓋層 (全螢幕毛玻璃 + 64px 飛速旋轉循環箭頭/沙漏) -->
+    <div class="modal-overlay" id="globalSyncOverlay"
+        style="z-index: 99999; display: none; align-items: center; justify-content: center; backdrop-filter: blur(8px); background: rgba(15, 23, 42, 0.75);">
+        <div
+            style="background: #ffffff; border: 1px solid rgba(226, 232, 240, 0.9); border-radius: 22px; padding: 36px 28px; max-width: 380px; width: 88vw; text-align: center; box-shadow: 0 25px 60px -15px rgba(0,0,0,0.35); animation: modalIn 0.3s ease;">
+            <div id="globalSyncIconWrapper" style="font-size: 64px; color: var(--brand-primary); margin-bottom: 16px;">
+                <i class="fa-solid fa-arrows-rotate fa-spin" id="globalSyncIcon"
+                    style="--fa-animation-duration: 1.0s;"></i>
+            </div>
+            <div id="globalSyncTitle"
+                style="font-size: 19px; font-weight: 800; color: var(--brand-primary); margin-bottom: 8px;">
+                📥 正在接收跨裝置車籍...
+            </div>
+            <div id="globalSyncDesc"
+                style="font-size: 13.5px; color: var(--text-body); font-weight: 600; line-height: 1.6;">
+                已感應到發送端！正在解密車籍與實體照片，即將載入工作區...
+            </div>
+            <div
+                style="margin-top: 20px; height: 4px; width: 100%; background: var(--bg-highlight); border-radius: 99px; overflow: hidden;">
+                <div
+                    style="height: 100%; width: 60%; background: var(--brand-primary); border-radius: 99px; animation: progressIndeterminate 1.5s infinite ease-in-out;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast 通知元件 -->
+    <div class="toast-notification" id="toast">
+        <i class="fa-solid fa-circle-check text-success" id="toastIcon"></i>
+        <span id="toastText">訊息已送出</span>
+    </div>
+
+    <!-- 4 大通用基礎核心模組 (Core Framework Modules) -->
+    <script src="js/core/ui-kit.js?v=1.5.0"></script>
+    <script src="js/core/ai-dispatcher.js?v=1.5.0"></script>
+    <script src="js/core/dual-track-sync.js?v=1.5.0"></script>
+    <script src="js/core/export-manager.js?v=1.5.0"></script>
+
+    <!-- 2 大業務領域專屬插件 (Domain Plugins) -->
+    <script src="js/plugins/cv-analyzer.js?v=1.5.0"></script>
+    <script src="js/plugins/license-normalizer.js?v=1.5.0"></script>
+
+    <!-- 應用程式主控制器與事件調度 -->
+    <script src="js/app.js?v=1.5.0"></script>
+</body>
+
+</html>

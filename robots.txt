@@ -1,0 +1,9 @@
+# robots.txt for Auto Licensify AI (TW)
+# https://hungprogo.github.io/Auto-Licensify-AI-TW/
+
+User-agent: *
+Allow: /
+
+# Host & Sitemap Specification
+Host: https://hungprogo.github.io
+Sitemap: https://hungprogo.github.io/Auto-Licensify-AI-TW/sitemap.xml
